@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfica Veterinária PB - Sua loja de produtos personalizados para pets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#top" id="home-link">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="icons">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Buscar produtos...">
+          <i class="fas fa-search" id="search-button"></i>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+        <i class="fas fa-user" id="user-icon" title="Área do cliente"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <h1>Bem-vindo à Gráfica Veterinária PB</h1>
+    <p>Materiais criativos e personalizados para o seu pet shop ou clínica veterinária. Deixe seu pet ainda mais
+      especial com nossos produtos exclusivos!</p>
+    <a href="#catalogo" class="btn">Ver Catálogo</a>
+  </main>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <div class="sobre-content">
+        <div class="sobre-texto">
+          <p>Há mais de 10 anos no mercado, a Gráfica Veterinária PB é referência em produtos personalizados para pets
+            na Paraíba. Nossa missão é oferecer produtos de alta qualidade que tornam a vida dos animais de estimação e
+            seus tutores mais feliz e prática.</p>
+          <p>Trabalhamos com materiais seguros e duráveis, seguindo as mais rigorosas normas de qualidade. Nossa equipe
+            é formada por amantes de animais e profissionais qualificados que entendem as necessidades do seu pet.</p>
+        </div>
+        <div class="sobre-imagem">
+          <img src="fotos/veterinario.jpg" alt="Nossa equipe">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrossel Principal -->
+  <section class="carousel-section" aria-label="Destaques">
+    <div class="carousel" id="carousel">
+      <button class="carousel-btn prev" id="btnPrev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Slide 1 -->
+          <figure class="carousel-slide">
+            <img src="fotos/personalizados.jpg" alt="Produtos Personalizados - coleiras, tags e brindes">
+            <figcaption>
+              <h3>Produtos Personalizados</h3>
+              <p>Coleiras, tags, bottons e roupas com a identidade da sua marca.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Slide 2 -->
+          <figure class="carousel-slide">
+            <img src="fotos/cartão de vacina e receituario.jpg" alt="Materiais de Qualidade">
+            <figcaption>
+              <h3>Materiais de Qualidade</h3>
+              <p>Acabamento e impressão profissional para resultados duráveis.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Slide 3 -->
+          <figure class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1500&q=80"
+              alt="Entrega Rápida">
+            <figcaption>
+              <h3>Entrega Rápida</h3>
+              <p>Envio ágil e seguro para todo o Brasil.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" id="btnNext" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Indicadores do carrossel"></div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section class="catalogo" id="catalogo">
+    <div class="container">
+      <h2>Nosso Catálogo</h2>
+      <p>Confira nossos produtos mais populares</p>
+
+      <div class="products-grid">
+        <!-- Coleira -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/coleiras.webp" alt="Coleira Personalizada">
+          <div class="product-info">
+            <h3 class="product-title">Coleira Personalizada</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="product-price">R$ 29,90</p>
+            <button class="add-to-cart" data-id="1" data-name="Coleira Personalizada" data-price="29.90"
+              data-image="https://images.unsplash.com/photo-1591768575198-88dac53fbd0a?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Bottons -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/botton.jpg" alt="Bottons Personalizados">
+          <div class="product-info">
+            <h3 class="product-title">Bottons Personalizados</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 9,90</p>
+            <button class="add-to-cart" data-id="5" data-name="Bottons Personalizados" data-price="9.90"
+              data-image="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Caneca -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/caneca.jpg" alt="Caneca Personalizada">
+          <div class="product-info">
+            <h3 class="product-title">Caneca Personalizada</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 24,90</p>
+            <button class="add-to-cart" data-id="6" data-name="Caneca Personalizada" data-price="24.90"
+              data-image="https://images.unsplash.com/photo-1517686469429-8a9356a05b58?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Cartão de Vacina -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/cartão de vacina.jpg" alt="Cartão de Vacina">
+          <div class="product-info">
+            <h3 class="product-title">Cartão de Vacina</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 14,90</p>
+            <button class="add-to-cart" data-id="7" data-name="Cartão de Vacina" data-price="14.90"
+              data-image="https://images.unsplash.com/photo-1582719478250-05a1f8f7b0e1?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Receituário -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/receituario.jpg" alt="Receituário">
+          <div class="product-info">
+            <h3 class="product-title">Receituário</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 19,90</p>
+            <button class="add-to-cart" data-id="8" data-name="Receituário" data-price="19.90"
+              data-image="https://images.unsplash.com/photo-1532634896-26909d0d0d11?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Cartão de Visita -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/cartão visita.jpg" alt="Cartão de Visita">
+          <div class="product-info">
+            <h3 class="product-title">Cartão de Visita</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 39,90</p>
+            <button class="add-to-cart" data-id="9" data-name="Cartão de Visita" data-price="39.90"
+              data-image="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Controle de Parasitas -->
+        <div class="product-card">
+          <img class="product-image" src="fotos/parasitas.webp" alt="Controle de Parasitas">
+          <div class="product-info">
+            <h3 class="product-title">Controle de Parasitas</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 79,90</p>
+            <button class="add-to-cart" data-id="10" data-name="Controle de Parasitas" data-price="79.90"
+              data-image="https://images.unsplash.com/photo-1558981285-9d4b34a8d1c7?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Roupas Personalizadas -->
+        <div class="product-card">
+          <img class="product-image"
+            src="https://images.unsplash.com/photo-1591768575198-88dac53fbd0a?auto=format&fit=crop&w=800&q=80"
+            alt="Roupas Personalizadas">
+          <div class="product-info">
+            <h3 class="product-title">Roupas Personalizadas</h3>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+            <p class="product-price">R$ 49,90</p>
+            <button class="add-to-cart" data-id="11" data-name="Roupas Personalizadas" data-price="49.90"
+              data-image="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80">Adicionar
+              ao Carrinho</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="container">
+      <h2>Avaliações dos Clientes</h2>
+
+      <div class="reviews-container">
+        <div class="avaliacao-item">
+          <div class="review-header">
+            <span class="reviewer-name">Ana S.</span>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p>"Excelente atendimento e produtos de qualidade! Meu pet adorou a coleira personalizada."</p>
+        </div>
+
+        <div class="avaliacao-item">
+          <div class="review-header">
+            <span class="reviewer-name">Carlos M.</span>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <p>"Material criativo e personalizado! Recomendo para todos os pet shops. A entrega foi super rápida."</p>
+        </div>
+
+        <div class="avaliacao-item">
+          <div class="review-header">
+            <span class="reviewer-name">Marina R.</span>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <p>"Comprei a ração premium e meu cachorro adorou! Ótimo custo-benefício e chegou bem embalado."</p>
+        </div>
+      </div>
+
+      <div class="add-review">
+        <h3>Deixe sua avaliação</h3>
+        <form id="review-form">
+          <div class="form-group">
+            <label for="name">Seu nome</label>
+            <input type="text" id="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="rating">Avaliação</label>
+            <div class="stars" id="rating-stars">
+              <i class="far fa-star" data-value="1"></i>
+              <i class="far fa-star" data-value="2"></i>
+              <i class="far fa-star" data-value="3"></i>
+              <i class="far fa-star" data-value="4"></i>
+              <i class="far fa-star" data-value="5"></i>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="0" required>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Comentário</label>
+            <textarea id="comment" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar Avaliação</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contato e Endereço -->
+  <section class="endereco" id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Rua Manoel de Nóbrega, 156 - Bairro Pet, Paraíba- PB</p>
+      <p>Telefone: (83) 3222-4455 | WhatsApp: (83) 99999-8888</p>
+      <p>Email: contato@graficaveterinariapb.com.br</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gráfica Veterinária PB - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Sidebar de Cliente (atalho pelo ícone de usuário) -->
+  <div class="sidebar" id="user-sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h3>Área do Cliente</h3>
+      <button id="close-sidebar" class="close-sidebar" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="sidebar-body">
+
+      <!-- login / register -->
+      <div id="login-register-view">
+        <div id="login-section">
+          <h4>Entrar</h4>
+          <form id="sidebar-login-form">
+            <div class="form-group">
+              <label for="login-cpf">CPF</label>
+              <input type="text" id="login-cpf" placeholder="000.000.000-00" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Senha</label>
+              <input type="password" id="login-password" placeholder="Sua senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+          </form>
+          <p style="margin-top:10px;">Ainda não tem conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </div>
+
+        <div id="register-section" style="display:none; margin-top:10px;">
+          <h4>Cadastro</h4>
+          <form id="sidebar-form">
+            <div class="form-group">
+              <label for="sid-nome">Nome</label>
+              <input type="text" id="sid-nome" required>
+            </div>
+            <div class="form-group">
+              <label for="sid-cpf">CPF</label>
+              <input type="text" id="sid-cpf" required placeholder="000.000.000-00">
+            </div>
+            <div class="form-group">
+              <label for="sid-endereco">Endereço</label>
+              <textarea id="sid-endereco" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="sid-password">Senha</label>
+              <input type="password" id="sid-password" required placeholder="Crie uma senha segura">
+            </div>
+            <button type="submit" class="btn">Salvar e Entrar</button>
+          </form>
+          <p style="margin-top:10px;">Já possui conta? <a href="#" id="show-login">Entrar</a></p>
+        </div>
+      </div>
+
+      <!-- painel do login do cliente -->
+      <div id="client-dashboard" style="display:none;">
+        <h4>Bem-vindo, <span id="client-name-display"></span></h4>
+        <p><strong>CPF:</strong> <span id="client-cpf-display"></span></p>
+        <p><strong>Endereço:</strong> <span id="client-end-display"></span></p>
+        <div style="margin-top:12px;">
+          <button id="client-logout" class="btn">Sair</button>
+        </div>
+        <hr style="margin:12px 0;">
+        <h4>Clientes cadastrados</h4>
+        <div id="sidebar-clientes-list" class="sidebar-clientes-list"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+  <!-- Modal do Carrinho -->
+  <div class="sidebar" id="cart-sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h3>Seu Carrinho</h3>
+      <button id="close-cart-sidebar" class="close-sidebar" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="sidebar-body">
+      <div class="cart-items">
+        <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+      </div>
+      <div class="cart-total">
+        Total: R$ <span id="cart-total">0,00</span>
+      </div>
+      <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
