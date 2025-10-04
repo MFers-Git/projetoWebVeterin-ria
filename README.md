@@ -4,14 +4,16 @@ Site e-commerce desenvolvido com HTML, CSS e JavaScript para venda de produtos v
 
 Funcionalidades:
 
-Catálogo de produtos organizado por categorias
+* Catálogo de produtos organizado por categorias;
 
-Carrinho de compras interativo
+* Carrinho de compras interativo;
 
-Design responsivo para mobile e desktop
+* Design responsivo para mobile e desktop;
 
-Filtros e busca de produtos
+* Filtros e busca de produtos;
 
-Modal de detalhes do produto
+* Modal de detalhes do produto;
 
-Tecnologias: HTML5, CSS3, JavaScript Vanilla
+* Persistencia de dados.
+
+Tecnologias: HTML5, CSS3, JavaScript
